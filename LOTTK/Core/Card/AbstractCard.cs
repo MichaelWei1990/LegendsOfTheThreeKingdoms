@@ -9,6 +9,8 @@ namespace Core.Card
         public Poker.Suit Suit { get; private set; }
         public Poker.Number Number { get; private set; }
 
+        public string Name { get; protected set; }
+
         public AbstractCard(Poker.Suit suit, Poker.Number num) 
         {
             Suit = suit;
