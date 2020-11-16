@@ -12,6 +12,11 @@ namespace Core.Player
 
         internal Sections.EquipmentCards EquipmentsSection { get; private set; } = new Sections.EquipmentCards();
 
+        internal SlashAlternatives SlashAlternatives { get; private set; } = new SlashAlternatives();
+        public SlashAlternatives GetSlashAlternative()
+        {
+            return SlashAlternatives;
+        }
 
         // Temp
         public bool PlayerRoundSlashUsed = false;

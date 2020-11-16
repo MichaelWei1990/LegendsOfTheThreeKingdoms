@@ -6,6 +6,6 @@ namespace Core.Behaviour
 {
     public interface IArmorNullifiable
     {
-        bool IsArmorNullifiable(Player.Player player);
+        bool IsArmorNullifiable();
     }
 }

@@ -33,7 +33,7 @@ namespace Core.Card
             Player.BehaviourRecoverer.RecoverArmorNullifier(user);
         }
 
-        public bool IsArmorNullifiable(Player.Player target)
+        public bool IsArmorNullifiable()
         {
             return true;
         }
