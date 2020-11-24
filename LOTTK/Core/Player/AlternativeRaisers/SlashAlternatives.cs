@@ -10,8 +10,8 @@ namespace Core.Player
     {
         public enum Priority 
         {
-            SKILL = 0,
-            WEAPON = 1,
+            WEAPON = 0,
+            SKILL = 1,           
         }
 
         private OrderedDictionary mAlternatives = new OrderedDictionary();

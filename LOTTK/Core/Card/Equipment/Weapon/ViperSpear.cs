@@ -1,6 +1,7 @@
 ﻿using Core.Events;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Core.Card
@@ -49,8 +50,9 @@ namespace Core.Card
 
             // TODO: dispose cards to disposed card deck
 
-            Events.Slash evnt = new Slash(user, target, Cards);
+            Events.Slash evnt = new Events.Slash(user, target, Cards.ToList());
             user.UseSlashCard();
+            Cards.Clear();
             return evnt;
         }
 

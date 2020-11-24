@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.Behaviour
 {
-    public interface ISlashAlternative
+    public interface ISlashAlternative : EventRaiser.ISlashEventRaiser
     {
         IList<Card.AbstractCard> Cards { get; set; }
         
@@ -12,6 +12,6 @@ namespace Core.Behaviour
 
         bool IsEventRaisable();
 
-        Events.Slash RaiseSlashEvent(Player.Player user, Player.Player target);
+        //Events.Slash RaiseSlashEvent(Player.Player user, Player.Player target);
     }
 }
